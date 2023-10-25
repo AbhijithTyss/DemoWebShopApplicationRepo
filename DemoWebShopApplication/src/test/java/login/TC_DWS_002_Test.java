@@ -1,9 +1,7 @@
 package login;
 
-import java.lang.reflect.Method;
 
 import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
