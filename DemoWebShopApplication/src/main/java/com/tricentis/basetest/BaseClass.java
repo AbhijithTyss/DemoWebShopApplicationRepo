@@ -50,6 +50,7 @@ public class BaseClass {
 	@BeforeClass(alwaysRun = true)
 	public void browserSetup(@Optional("chrome") String browserName) throws IOException {
 		if(browserName.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver.exe");
 			driver=new ChromeDriver();
 		}else if (browserName.equalsIgnoreCase("firefox")) {
 			driver=new FirefoxDriver();
